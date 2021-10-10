@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-<div class="hero-wrap hero-bread" style="background-image: url('<?php echo get_theme_uri('images/bg_1.jpg'); ?>');">
+<div class="hero-wrap hero-bread" style="background-image: url('<?php echo get_theme_uri('images/c4.jpg'); ?>');">
     <div class="container">
       <div class="row no-gutters slider-text align-items-center justify-content-center">
         <div class="col-md-9 ftco-animate text-center">
@@ -66,13 +66,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-md-12">
                     <p style="color: #000;">Tersedia <?php echo $product->stock; ?> <?php echo $product->product_unit; ?></p>
                 </div>
+                <div class="w-100"></div>
+                <div class="col-md-12">
+                </div>
             </div>
             <p><a href="#" class="btn btn-black btn-sm py-3 px-5 add-cart cart-btn" data-sku="<?php echo $product->sku; ?>" data-name="<?php echo $product->name; ?>" data-price="<?php echo ($product->current_discount > 0) ? ($product->price - $product->current_discount) : $product->price; ?>" data-id="<?php echo $product->id; ?>">Add to Cart</a></p>
               </div>
           </div>
       </div>
+      
   </section>
-
+  
   <section class="ftco-section">
       <div class="container">
               <div class="row justify-content-center mb-3 pb-3">

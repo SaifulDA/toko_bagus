@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-<div class="hero-wrap hero-bread" style="background-image: url('<?php echo get_theme_uri('images/bg_1.jpg'); ?>');">
+<div class="hero-wrap hero-bread" style="background-image: url('<?php echo get_theme_uri('images/c2.jpg'); ?>');">
     <div class="container">
       <div class="row no-gutters slider-text align-items-center justify-content-center">
         <div class="col-md-9 ftco-animate text-center">
@@ -11,12 +11,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
     </div>
   </div>
-
+<br>
   <section class="ftco-section ftco-no-pb ftco-no-pt bg-light">
           <div class="container">
               <div class="row">
-                  <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(<?php echo get_theme_uri('images/about.jpg'); ?>);">
-                      <a href="https://vimeo.com/45830194" class="icon popup-vimeo d-flex justify-content-center align-items-center">
+                  <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(<?php echo get_theme_uri('images/logo.jpg'); ?>);">
+                      <a href="<?php echo get_theme_uri('images/v1.mp4'); ?>" class="icon popup-vimeo d-flex justify-content-center align-items-center">
                           <span class="icon-play"></span>
                       </a>
                   </div>
@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
             <div class="pb-md-5">
                 <p><?php echo get_settings('store_description'); ?></p>
-                          <p><a href="<?php echo site_url('browse'); ?>" class="btn btn-primary">Belanja sekarang!</a></p>
+                          <p><a href="<?php echo site_url('home'); ?>" class="btn btn-primary">Belanja sekarang!</a></p>
                       </div>
                   </div>
               </div>
@@ -93,8 +93,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <span class="flaticon-diet"></span>
         </div>
         <div class="media-body">
-          <h3 class="heading">Selalu Segar</h3>
-          <span>Dipetik Langsung dari Kebun</span>
+          <h3 class="heading">Selalu Original</h3>
+          <span>Pabrik Official Store</span>
         </div>
       </div>    
     </div>
@@ -105,7 +105,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <div class="media-body">
           <h3 class="heading">Kualitas Terbaik</h3>
-          <span>Kualitas dari Pertanian Terbaik</span>
+          <span>Kualitas Bahan Terbaik</span>
         </div>
       </div>      
     </div>

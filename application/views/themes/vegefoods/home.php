@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
     </div>
 
-    <div class="slider-item" style="background-image: url(<?php echo get_theme_uri('images/bg2.jpg'); ?>);">
+    <div class="slider-item" style="background-image: url(<?php echo get_theme_uri('images/bg23.jpg'); ?>);">
         <div class="overlay"></div>
       <div class="container">
         <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
@@ -144,7 +144,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </div>
 </section>
   
-  <section class="ftco-section img" style="background-image: url(<?php echo get_theme_uri('images/bg_3.jpg'); ?>);">
+  <section class="ftco-section img" style="background-image: url(<?php echo get_theme_uri('images/u2.jpg'); ?>);">
   <div class="container">
           <div class="row justify-content-end">
     <div class="col-md-6 heading-section ftco-animate deal-of-the-day ftco-animate">
