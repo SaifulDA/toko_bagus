@@ -45,6 +45,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       <?php else : ?>
                       <span>Rp <?php echo format_rupiah($product->price); ?></span>
                       <?php endif; ?>
+                      <p style="color: #004b18;">Deskripsi Produk</p>
                     </p>
                   <p><?php echo $product->description; ?></p>
                       <div class="row mt-4">

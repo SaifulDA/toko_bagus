@@ -157,14 +157,12 @@ h6 {
 /* ==========================================================================
    #BACKGROUND
    ========================================================================== */
-   
 .bg-blue {
-  background: #000000;
+  background: #2c6ed5;
 }
 
 .bg-red {
-  background: url("../images/bgheading02.jpg");
-  background-size: cover;
+  background: #166d01;
 }
 
 /* ==========================================================================
@@ -474,8 +472,9 @@ input {
 }
 
 .card-2 .card-heading {
-  background: url("../images/bgheading02.jpg");
+  background: url("../images/bg-heading-02.jpg");
   background-size: cover;
+
 }
 
 .card-2 .card-body {

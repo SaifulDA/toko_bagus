@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../images/log1.jpg) no-repeat 0px 0px;
+    background: url(../images/cover41.jpg) no-repeat 0px 0px;
     min-height: 100vh;
     background-size: cover;
     font-family: 'Raleway', sans-serif;
@@ -47,7 +47,8 @@ p.w3l-register-p {
 }
 
 .w3l-login-form {
-    background: rgba(0, 0, 0, 0.4117647058823529);
+    
+    background: rgba(0, 0, 0, 0.412);
     max-width: 500px;
     margin: 0 auto;
     padding: 3em;

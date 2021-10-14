@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <section class="ftco-section ftco-no-pb ftco-no-pt bg-light">
           <div class="container">
               <div class="row">
-                  <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(<?php echo get_theme_uri('images/logo.jpg'); ?>);">
+                  <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(<?php echo get_theme_uri('images/logo1.jpg'); ?>);">
                       <a href="<?php echo get_theme_uri('images/v1.mp4'); ?>" class="icon popup-vimeo d-flex justify-content-center align-items-center">
                           <span class="icon-play"></span>
                       </a>
