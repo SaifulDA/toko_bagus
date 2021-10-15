@@ -34,7 +34,7 @@ $query = $this->input->get('search_query');
       <!-- Brand -->
       <div class="sidenav-header d-flex align-items-center">
         <a class="navbar-brand" href="<?php echo base_url(); ?>">
-          <img src="<?php echo get_store_logo(); ?>" class="navbar-brand-img" alt="Logo <?php echo get_store_name(); ?>">
+          <img src="<?php echo get_store_name(); ?>" class="navbar-brand-img" alt="Logo <?php echo get_store_name(); ?>">
         </a>
         <div class="ml-auto">
           <!-- Sidenav toggler -->

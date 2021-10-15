@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
   <footer class="main-footer">
-    <strong>Copyright &copy; 2019 <?php echo anchor(base_url(), get_store_name()); ?>.</strong>
+    <strong>Copyright &copy; 2021 <?php echo anchor(base_url(), get_store_name()); ?>.</strong>
   </footer>
 
   <aside class="control-sidebar control-sidebar-dark">
