@@ -16,18 +16,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
       </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- Page content -->
     <div class="container-fluid mt--6">
       <div class="row">
         <div class="col">
           <div class="card">
             <!-- Card header -->
-            <div class="card-header">
+            <div class="card-header bg-warning">
               <h3 class="mb-0">Kelola Produk</h3>
             </div>
 
             <?php if ( count($products) > 0) : ?>
-            <div class="card-body">
+            <div class="card-body bg-primary">
                 <div class="row">
                 <?php foreach ($products as $product) : ?>
                     <div class="col-md-3">

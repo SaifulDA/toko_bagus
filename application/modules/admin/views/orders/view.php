@@ -16,7 +16,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
     </div>
   </div>
 </div>
-
+<br>
+<br>
+<br>
+<br>
 <!-- Page content -->
 <div class="container-fluid mt--6">
 
@@ -24,15 +27,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <div class="col-md-8">
       <div class="card-wrapper">
         <div class="card">
-          <div class="card-header">
+          <div class="card-header bg-warning">
             <h3 class="mb-0">Data Order</h3>
             <?php if ($order_flash) : ?>
               <span class="float-right text-success font-weight-bold" style="margin-top: -30px;"><?php echo $order_flash; ?></span>
             <?php endif; ?>
           </div>
 
-          <div class="card-body p-0">
-            <table class="table align-items-center table-flush table-striped">
+          <div class="card-body bg-primary p-0">
+            <table class="table align-items-center text-white table-flush table-striped">
               <tr>
                 <td>Nomor</td>
                 <td><b>#<?php echo $data->order_number; ?></b></td>
@@ -59,7 +62,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
               </tr>
             </table>
           </div>
-          <div class="card-footer">
+          <div class="card-footer bg-primary">
             <form action="<?php echo site_url('admin/orders/status'); ?>" method="POST">
               <input type="hidden" name="order" value="<?php echo $data->id; ?>">
               <div class="row">
@@ -84,7 +87,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 </div>
                 <div class="col-md-2">
                   <div class="text-right">
-                    <input type="submit" value="OK" class="btn btn-md btn-primary">
+                    <input type="submit" value="OK" class="btn btn-md btn-warning">
                   </div>
                 </div>
               </div>
@@ -93,12 +96,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
         </div>
 
         <div class="card card-primary">
-          <div class="card-header">
+          <div class="card-header bg-warning">
             <h3 class="mb-0">Barang dalam pesanan</h3>
           </div>
-          <div class="card-body p-0">
+          <div class="card-body bg-primary p-0">
             <table class="table align-items-center table-flush">
-              <thead class="thead-light">
+              <thead class=" thead-light">
                 <tr>
                   <th scope="col"></th>
                   <th scope="col">Produk</th>
@@ -113,10 +116,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
                       <img class="img img-fluid rounded" style="width: 60px; height: 60px;" alt="<?php echo $item->name; ?>" src="<?php echo base_url('assets/uploads/products/' . $item->picture_name); ?>">
                     </td>
                     <td>
-                      <h5 class="mb-0"><?php echo $item->name; ?></h5>
+                      <h5 class="text-white mb-0"><?php echo $item->name; ?></h5>
                     </td>
-                    <td><?php echo $item->order_qty; ?></td>
-                    <td>Rp <?php echo format_rupiah($item->order_price); ?></td>
+                    <td><div class="text-white"> <?php echo $item->order_qty; ?></td>
+                    <td><div class="text-white">Rp <?php echo format_rupiah($item->order_price); ?></td>
                   </tr>
                 <?php endforeach; ?>
               </tbody>
@@ -129,11 +132,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
     </div>
     <div class="col-md-4">
       <div class="card card-primary">
-        <div class="card-header">
+        <div class="card-header bg-warning">
           <h3 class="mb-0">Data Penerima</h3>
         </div>
-        <div class="card-body p-0">
-          <table class="table align-items-center table-flush table-hover">
+        <div class="card-body  bg-primary p-0">
+          <table class="table  text-white align-items-center table-flush table-hover">
             <tr>
               <td>Nama</td>
               <td><b><?php echo $delivery_data->customer->name; ?></b></td>
@@ -156,9 +159,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
         </div>
       </div>
 
-      <div class="card card-primary" id="#payments">
-        <div class="card-header">
-          <h3 class="mb-0">Pembayaran</h3>
+      <div class="card card-primary bg-primary" id="#payments">
+        <div class="card-header bg-warning">
+          <h3 class="text-white mb-0">Pembayaran</h3>
         </div>
         <div class="card-body <?php echo ($data->payment_method == 1) ? 'p-0' : ''; ?>">
           <?php if ($data->payment_method == 1) : ?>
@@ -175,7 +178,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <div class="alert alert-info" id="payment_flash"><?php echo $payment_flash; ?></div>
               <?php endif; ?>
 
-              <table class="table align-items-center table-flush table-hover">
+              <table class="table align-items-center text-white table-flush table-hover">
                 <tr>
                   <td>Transfer</td>
                   <td><b>Rp <?php echo format_rupiah($data->payment_price); ?></b></td>

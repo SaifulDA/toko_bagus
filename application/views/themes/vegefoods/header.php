@@ -91,7 +91,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				  <div class="divider"></div>
 				  <a class="dropdown-item" href="<?php echo site_url('auth/logout'); ?>">Logout</a>
 				  <?php else : ?>
-              	  <a class="dropdown-item" href="<?php echo site_url('auth/login'); ?>">Masuk Log</a>
+              	  <a class="dropdown-item" href="<?php echo site_url('auth/login'); ?>">Masuk Akun</a>
 				  <a class="dropdown-item" href="<?php echo site_url('auth/register'); ?>">Daftar</a>
 				  <?php endif; ?>
               </div>

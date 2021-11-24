@@ -21,16 +21,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
       </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- Page content -->
     <div class="container-fluid mt--6">
       <div class="row">
         <div class="col">
           <div class="card">
             <!-- Card header -->
-            <div class="card-header">
+            <div class="card-header bg-warning">
               <h3 class="mb-0">Kontak</h3>
             </div>
-
+            <br>
             <div class="card-body p-0">
                 <div class="table-responsive">
                     <table class="table align-items-center table-flush" id="customerList" style="width: 100%">

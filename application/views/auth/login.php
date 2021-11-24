@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <body>
     <br><br><br><br><br><br><br>
         <div class=" w3l-login-form">
-            <h2>Login Akun</h2>
+            <h2>Login Akun Toko Bagus</h2>
             <?php if ($flash_message) : ?>
             <div class="flash-message">
                 <?php echo $flash_message; ?>

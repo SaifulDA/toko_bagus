@@ -17,22 +17,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </nav>
             </div>
             <div class="col-lg-6 col-5 text-right">
-              <a href="#" data-target="#addModal" data-toggle="modal" class="btn btn-sm btn-neutral">Tambah</a>
+              <a href="#" data-target="#addModal" data-toggle="modal" class="btn btn-sm btn-warning">Tambah</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- Page content -->
     <div class="container-fluid mt--6">
       <div class="row">
         <div class="col">
           <div class="card">
             <!-- Card header -->
-            <div class="card-header border-0">
+            <div class="card-header bg-warning border-0">
               <h3 class="mb-0">Kategori Kupon</h3>
             </div>
-
+            <br>
             <div class="packageContainer">
             <!-- Light table -->
             <div class="table-responsive">

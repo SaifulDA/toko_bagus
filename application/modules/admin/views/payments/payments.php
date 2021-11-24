@@ -21,13 +21,17 @@ defined('BASEPATH') or exit('No direct script access allowed');
     </div>
   </div>
 </div>
+<br>
+<br>
+<br>
+<br>
 <!-- Page content -->
 <div class="container-fluid mt--6">
   <div class="row">
     <div class="col">
       <div class="card">
         <!-- Card header -->
-        <div class="card-header">
+        <div class="card-header bg-warning">
           <h3 class="mb-0">Kelola Pembayaran</h3>
         </div>
 

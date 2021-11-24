@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <div class="content-wrapper">
-    <section class="content-header">
+    <section class="content-header bg-warning">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
       </div><!-- /.container-fluid -->
     </section>
-
+       <br>
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
@@ -25,16 +25,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <div class="col-md-3">
 
             <!-- Profile Image -->
-            <div class="card card-primary card-outline">
+            <div class="card card-primary bg-purple card-outline">
               <div class="card-body box-profile">
                 <div class="text-center">
                   <img class="profile-user-img img-fluid img-circle"
                        src="<?php echo get_user_image(); ?>"
                        alt="<?php echo get_user_name(); ?>">
                 </div>
-
-                <h3 class="profile-username text-center"><?php echo get_user_name(); ?></h3>
-                <p class="text-muted text-center"><?php echo $user->username; ?> | <?php echo $user->email; ?></p>
+                
+                <h3 class="text-white profile-username text-center"><?php echo get_user_name(); ?></h3>
+                <p class="text-white text-center"><?php echo $user->username; ?> | <?php echo $user->email; ?></p>
                 <?php if ($flash) : ?>
                     <p class="text-center text-success"><?php echo $flash; ?></p>
                 <?php endif; ?>
@@ -47,12 +47,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           </div>
           <!-- /.col -->
           <div class="col-md-9">
-            <div class="card">
+            <div class="card bg-purple">
               <div class="card-header p-2">
                 <ul class="nav nav-pills">
-                  <li class="nav-item"><a class="nav-link profil active" href="#profile" data-toggle="tab">Profil</a></li>
-                  <li class="nav-item"><a class="nav-link akun " href="#akun" data-toggle="tab">Akun</a></li>
-                  <li class="nav-item"><a class="nav-link email" href="#email" data-toggle="tab">Email</a></li>
+                  <li class="nav-item"><a class="nav-link profil active text-white" href="#profile" data-toggle="tab">Profil</a></li>
+                  <li class="nav-item"><a class="nav-link akun text-white " href="#akun" data-toggle="tab">Akun</a></li>
+                  <li class="nav-item"><a class="nav-link email text-white" href="#email" data-toggle="tab">Email</a></li>
                   <li class="nav-item"><a class="nav-link logout btn btn-danger btn-sm text-white font-weight-bold" href="<?php echo site_url('auth/logout'); ?>">Log Out</a></li>
                 </ul>
               </div><!-- /.card-header -->

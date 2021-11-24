@@ -23,7 +23,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
       </div>
     </div>
-
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- Page content -->
     <div class="container-fluid mt--6">
       <?php echo form_open_multipart('admin/products/edit_product'); ?>
@@ -33,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="col-md-8">
           <div class="card-wrapper">
             <div class="card">
-              <div class="card-header">
+              <div class="card-header bg-warning ">
                 <h3 class="mb-0">Data Produk</h3>
                 <?php if ($flash) : ?>
                 <span class="float-right text-success font-weight-bold" style="margin-top: -30px">
@@ -42,11 +45,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <?php endif; ?>
               </div>
         
-              <div class="card-body">
+              <div class="card-body bg-primary">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="form-group">
-                      <label class="form-control-label" for="pakcage">Kategori:</label>
+                      <label class="form-control-label text-white" for="pakcage">Kategori:</label>
                       <select name="category_id" class="form-control" id="package">
                         <option>Pilih kategori</option>
                         <?php if ( count($categories) > 0) : ?>
@@ -61,7 +64,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
 
                 <div class="form-group">
-                  <label class="form-control-label" for="name">Nama produk:</label>
+                  <label class="form-control-label text-white" for="name">Nama produk:</label>
                   <input type="text" name="name" value="<?php echo set_value('name', $product->name); ?>" class="form-control" id="name">
                   <?php echo form_error('name'); ?>
                 </div>
@@ -69,10 +72,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="row">
                   <div class="col-6">
                     <div class="form-group">
-                      <label class="form-control-label" for="price">Harga:</label>
+                      <label class="form-control-label text-white" for="price">Harga:</label>
                       <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">Rp</span>
+                          <span class="input-group-text text-white">Rp</span>
                         </div>
                         <input type="text" name="price" value="<?php echo set_value('price', $product->price); ?>" class="form-control" id="price">
                       </div>
@@ -81,7 +84,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   </div>
                   <div class="col-6">
                   <div class="form-group">
-                  <label class="form-control-label" for="price_d">Diskon:</label>
+                  <label class="form-control-label text-white" for="price_d">Diskon:</label>
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text">Rp</span>
@@ -96,14 +99,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="row">
                   <div class="col-6">
                     <div class="form-group">
-                      <label class="form-control-label" for="stock">Stok:</label>
+                      <label class="form-control-label text-white" for="stock">Stok:</label>
                       <input type="text" name="stock" value="<?php echo set_value('stock', $product->stock); ?>" class="form-control" id="stock">
                       <?php echo form_error('stock'); ?>
                     </div>
                   </div>
                   <div class="col-6">
                     <div class="form-group">
-                      <label class="form-control-label" for="unit">Satuan:</label>
+                      <label class="form-control-label text-white" for="unit">Satuan:</label>
                       <input type="text" name="unit" value="<?php echo set_value('unit', $product->product_unit); ?>" class="form-control" id="unit">
                       <?php echo form_error('unit'); ?>
                     </div>
@@ -111,13 +114,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
 
                 <div class="form-group">
-                  <label class="form-control-label" for="desc">Deskripsi:</label>
+                  <label class="form-control-label text-white" for="desc">Deskripsi:</label>
                   <textarea name="description" class="form-control" id="desc"><?php echo set_value('description', $product->description); ?></textarea>
                   <?php echo form_error('description'); ?>
                 </div>
 
                 <div class="form-group">
-                  <label for="av" class="form-control-label">
+                  <label for="av" class="form-control-label text-white">
                     <input type="checkbox" id="av" name="is_available" value="1" <?php echo set_checkbox('is_available', $product->is_available, ($product->is_available == 1) ? TRUE : FALSE); ?>> Apakah produk ini tersedia?
                   </label>
                 </div>
@@ -131,7 +134,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <div class="col-md-4">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header bg-warning">
                     <div class="row">
                         <div class="col-4">
                             <h3 class="mb-0">Foto</h3>

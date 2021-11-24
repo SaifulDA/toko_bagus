@@ -10,7 +10,7 @@ $query = $this->input->get('search_query');
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title><?php echo $title; ?> | <?php echo get_store_name(); ?></title>
+  <title><?php echo get_store_name();?></title>
   <!-- Favicon -->
   <link rel="icon" href="<?php echo get_theme_uri('img/brand/favicon.png', 'argon'); ?>" type="image/png">
   <!-- Fonts -->
@@ -29,12 +29,12 @@ $query = $this->input->get('search_query');
 
 <body class="@yield('sidebar_type')">
   <!-- Sidenav -->
-  <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-sm navbar-light bg-white" id="sidenav-main">
+  <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-sm navbar-primary bg-light" id="sidenav-main">
     <div class="scrollbar-inner">
       <!-- Brand -->
       <div class="sidenav-header d-flex align-items-center">
         <a class="navbar-brand" href="<?php echo base_url(); ?>">
-          <img src="<?php echo get_store_name(); ?>" class="navbar-brand-img" alt="Logo <?php echo get_store_name(); ?>">
+        <span class="brand-text font-weight-light"><?php echo get_store_name(); ?></span>
         </a>
         <div class="ml-auto">
           <!-- Sidenav toggler -->
@@ -114,7 +114,7 @@ $query = $this->input->get('search_query');
   <!-- Main content -->
   <div class="main-content" id="panel">
     <!-- Topnav -->
-    <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
+    <nav class="navbar navbar-top navbar-expand navbar-dark bg-warning border-bottom">
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!-- Search form -->

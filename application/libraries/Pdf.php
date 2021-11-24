@@ -3,7 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 use Dompdf\Dompdf;
 
-class Pdf
+class Pdf extends Dompdf
 {
 	function createPDF($html, $filename = '', $download = TRUE, $paper = 'A4', $orientation = 'portrait')
 	{

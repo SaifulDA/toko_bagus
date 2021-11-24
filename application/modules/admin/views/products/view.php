@@ -22,14 +22,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
       </div>
     </div>
-
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- Page content -->
     <div class="container-fluid mt--6">
       <div class="row">
         <div class="col-md-4">
           <div class="card-wrapper">
             <div class="card">
-              <div class="card-header">
+              <div class="card-header bg-warning">
                 <h3 class="mb-0">Data Produk</h3>
                 <?php if ($flash) : ?>
                 <span class="float-right text-success font-weight-bold" style="margin-top: -30px">
@@ -101,7 +104,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <div class="col-md-8">
             <div class="card card-primary">
-              <div class="card-header">
+              <div class="card-header bg-warning">
                   <h3 class="mb-0">Order</h3>
               </div>
               <div class="card-body p-0">

@@ -22,7 +22,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           </div>
         </div>
       </div>
-  
+      <br>
+      <br>
+      <br>
+      <br>
       <!-- Page content -->
       <div class="container-fluid mt--6">
         <?php echo form_open_multipart('admin/settings/profile_update'); ?>
@@ -31,7 +34,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <div class="col-md-8">
             <div class="card-wrapper">
               <div class="card">
-                <div class="card-header">
+                <div class="card-header bg-warning">
                   <h3 class="mb-0">Identitas</h3>
                   <?php if ($flash) : ?>
                     <span class="float-right text-success font-weight-bold" style="margin-top: -30px">
@@ -40,18 +43,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <?php endif; ?>
                 </div>
           
-                <div class="card-body">
+                <div class="card-body bg-primary">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="form-control-label" for="name">Nama:</label>
+                                <label class="form-control-label text-white" for="name">Nama:</label>
                                 <input type="text" name="name" value="<?php echo set_value('name', get_admin_name()); ?>" class="form-control" id="name" minlength="4" maxlength="255" required>
                                 <?php echo form_error('name'); ?>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="form-control-label" for="email">Email:</label>
+                                <label class="form-control-labeltext-white" for="email">Email:</label>
                                 <input type="email" name="email" value="<?php echo set_value('email', $user->email); ?>" class="form-control" id="email" minlength="10" maxlength="255" required>
                                 <?php echo form_error('email'); ?>
                             </div>
@@ -63,7 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                            <label class="form-control-label" for="username">Username:</label>
+                            <label class="form-control-label text-white" for="username">Username:</label>
                             <input type="text" name="username" value="<?php echo set_value('username', $user->username); ?>" class="form-control" id="username" minlength="4" maxlength="16" required>
                             <?php echo form_error('username'); ?>
                         </div>
@@ -71,9 +74,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       </div>
                       <div class="col-md-6">
                           <div class="form-group">
-                              <label class="form-control-label" for="password">Password:</label>
+                              <label class="form-control-label text-white" for="password">Password:</label>
                               <input type="password" name="password" value="" class="form-control" id="password" minlength="4" maxlength="100">
-                              <p class="text-muted"><small>Kosongkan password jika tidak ingin mengganti</small></p>
+                              <p class="text-white"><small>Kosongkan password jika tidak ingin mengganti</small></p>
                               <?php echo form_error('password'); ?>
                           </div>
                       </div>
@@ -87,7 +90,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
   
             <div class="card">
-              <div class="card-body  d-none d-md-block">
+              <div class="card-body d-none d-md-block">
                 <input type="submit" class="btn btn-primary float-right" value="Simpan">
               </div>
             </div>

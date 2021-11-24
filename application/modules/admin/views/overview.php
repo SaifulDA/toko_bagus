@@ -112,15 +112,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
       </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- Page content -->
     <div class="container-fluid mt--6">
       <div class="row">
         <div class="col-xl-8">
           <div class="card bg-default">
-            <div class="card-header bg-transparent">
+            <div class="card-header bg-warning">
               <div class="row align-items-center">
                 <div class="col">
-                  <h6 class="text-light text-uppercase ls-1 mb-1">Ringkasan</h6>
+                  <h6 class="text-white text-uppercase ls-1 mb-1">Ringkasan</h6>
                   <h5 class="h3 text-white mb-0">Penjualan</h5>
                 </div>
               </div>
@@ -135,12 +140,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           </div>
         </div>
         <div class="col-xl-4">
-          <div class="card">
-            <div class="card-header bg-transparent">
+          <div class="card bg-default">
+            <div class="card-header bg-warning">
               <div class="row align-items-center">
                 <div class="col">
-                  <h6 class="text-uppercase text-muted ls-1 mb-1">Ringkasan</h6>
-                  <h5 class="h3 mb-0">Pendapatan</h5>
+                  <h6 class="text-uppercase text-white text-muted ls-1 mb-1">Ringkasan</h6>
+                  <h5 class="text-white">Pendapatan</h5>
                 </div>
               </div>
             </div>
@@ -158,7 +163,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <!-- Members list group card -->
           <div class="card">
             <!-- Card header -->
-            <div class="card-header">
+            <div class="card-header bg-warning">
               <!-- Title -->
               <h5 class="h3 mb-0">Pelanggan baru</h5>
             </div>
@@ -195,7 +200,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <!-- Checklist -->
           <div class="card">
             <!-- Card header -->
-            <div class="card-header">
+            <div class="card-header bg-warning">
               <!-- Title -->
               <h5 class="h3 mb-0">Order baru</h5>
             </div>
@@ -221,7 +226,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <!-- Progress track -->
           <div class="card">
             <!-- Card header -->
-            <div class="card-header">
+            <div class="card-header bg-warning">
               <!-- Title -->
               <h5 class="h3 mb-0">Pembayaran menunggu konfirmasi</h5>
             </div>
@@ -256,7 +261,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="row">
         <div class="col-xl-8">
           <div class="card">
-            <div class="card-header border-0">
+            <div class="card-header bg-warning border-0">
               <div class="row align-items-center">
                 <div class="col">
                   <h3 class="mb-0">Produk baru</h3>
@@ -301,7 +306,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <div class="col-xl-4">
           <div class="card">
-            <div class="card-header border-0">
+            <div class="card-header bg-warning border-0">
               <div class="row align-items-center">
                 <div class="col">
                   <h3 class="mb-0">Kategori produk</h3>

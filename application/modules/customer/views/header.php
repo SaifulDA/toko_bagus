@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
 
-      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <nav class="main-header navbar navbar-expand navbar-primary navbar-light">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
