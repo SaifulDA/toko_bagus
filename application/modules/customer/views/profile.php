@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <div class="card-body box-profile">
                 <div class="text-center">
                   <img class="profile-user-img img-fluid img-circle"
-                       src="<?php echo get_user_image(); ?>"
+                       src="<?php echo get_admin_image(); ?>"
                        alt="<?php echo get_user_name(); ?>">
                 </div>
                 
@@ -85,9 +85,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       <div class="form-group row">
                         <label for="inputFoto" class="col-sm-2 col-form-label">Foto profil:</label>
                         <div class="col-sm-10">
+                      
                           <input type="file" class="form-control" id="inputFoto" name="file">
                         </div>
                         <?php echo form_error('name', '<div class="text-danger font-weight-bold">', '</div>'); ?>
+                        
                       </div>
                       <div class="form-group row">
                         <div class="offset-sm-2 col-sm-10">
@@ -153,3 +155,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </section>
     <!-- /.content -->
   </div>
+ 

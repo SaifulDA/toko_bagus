@@ -175,6 +175,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                     <p>Sudah mengirim pembayaran? Mari konfirmasi pembayaran.</p>
                                     <a href="<?php echo site_url('customer/payments/confirm?order='. $data->id); ?>" class="btn btn-success">Konfirmasi Pembayaran</a>
                                     <br>
+                                    <br>
                                     <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#cancelModal">Batalkan</a>
                                 <?php elseif ($data->order_status == 5) : ?>
                                     <p>Order dibatalkan</p>

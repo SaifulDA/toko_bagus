@@ -48,7 +48,7 @@ class Profile extends CI_Controller {
 
             if (isset($_FILES) && @$_FILES['file']['error'] == '0') {
                 $config['upload_path'] = './assets/uploads/users/';
-                $config['allowed_types'] = 'jpg|png';
+                $config['allowed_types'] = 'jpg|png|jpeg';
                 $config['max_size'] = 2048;
                 
                 $this->load->library('upload', $config);
