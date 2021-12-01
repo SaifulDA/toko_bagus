@@ -57,6 +57,7 @@ class Profile extends CI_Controller {
                 {
                     if ($old_profile)
                     {
+                        
                         unlink('./assets/uploads/users/'. $old_profile);
                     }
 
